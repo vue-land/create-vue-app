@@ -19,10 +19,10 @@ module.exports = {
       role: 'git:email'
     }
   },
-  post({targetFolder, chalk}) {
+  post({newFolder, chalk}) {
     console.log(chalk.green('\n  To get started:\n'))
-    if (targetFolder !== './') {
-      console.log(`  cd ${targetFolder}`)
+    if (newFolder) {
+      console.log(`  cd ${newFolder}`)
     }
     console.log('  yarn install')
     console.log('  yarn dev')
