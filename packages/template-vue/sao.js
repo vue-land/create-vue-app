@@ -4,7 +4,6 @@ module.exports = {
   prompts: {
     name: {
       message: `What's the name of your new project?`,
-      type: 'name',
       role: 'name'
     },
     description: {
