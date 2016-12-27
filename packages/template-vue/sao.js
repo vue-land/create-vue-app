@@ -7,6 +7,7 @@ module.exports = {
       role: 'name'
     },
     description: {
+      message: 'How would your descripe your superb project?'
       default: `My ${superb()} Vue project`
     },
     username: {
