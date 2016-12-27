@@ -1,0 +1,14 @@
+{
+  "name": "template-vue",
+  "version": "0.0.0",
+  "files": [
+    "sao.js",
+    "template"
+  ],
+  "repository": {
+    "url": "git@github.com:egoist/template-vue.git",
+    "type": "git"
+  },
+  "author": "EGOIST <0x142857@gmail.com>",
+  "license": "MIT"
+}
