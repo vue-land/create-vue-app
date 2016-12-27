@@ -4,7 +4,7 @@ module.exports = {
   prompts: {
     name: {
       message: `What's the name of your new project?`,
-      role: 'name'
+      role: 'folder:name'
     },
     description: {
       message: 'How would your descripe your superb project?',
@@ -19,10 +19,10 @@ module.exports = {
       role: 'git:email'
     }
   },
-  post({newFolder, chalk}) {
+  post({isNewFolder, folderName, chalk}) {
     console.log(chalk.green('\n  To get started:\n'))
-    if (newFolder) {
-      console.log(`  cd ${newFolder}`)
+    if (isNewFolder) {
+      console.log(`  cd ${folderName}`)
     }
     console.log('  yarn install')
     console.log('  yarn dev')
