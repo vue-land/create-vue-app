@@ -1,6 +1,6 @@
 # template-vue
 
-An [SAO](https://github.com/egoist/sao) template.
+An [SAO](https://github.com/egoist/sao) template for Vue.js
 
 ## Usage
 
