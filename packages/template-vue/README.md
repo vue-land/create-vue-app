@@ -12,8 +12,7 @@ mkdir my-project && cd my-project
 # from repo
 sao egoist/template-vue
 # or from npm
-yarn global add template-vue
-sao vue
+sao vue --install
 ```
 
 ## License
