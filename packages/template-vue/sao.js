@@ -1,9 +1,14 @@
+const superb = require('superb')
+
 module.exports = {
   prompts: {
     name: {
       message: `What's the name of your new project?`,
       type: 'name',
       role: 'name'
+    },
+    description: {
+      default: `My ${superb()} Vue project`
     },
     username: {
       message: `What's your GitHub username`,
