@@ -1,6 +1,7 @@
 const superb = require('superb')
 
 module.exports = {
+  template: 'handlebars',
   prompts: {
     name: {
       message: `What's the name of your new project?`,

@@ -4,15 +4,22 @@ An [SAO](https://github.com/egoist/sao) template for Vue.js
 
 ## Usage
 
+### vue-cli
+
+```bash
+vue init egoist/template-vue try-vue
+```
+
+### sao
+
 ```bash
 # install sao first
 yarn global add sao
 
-mkdir my-project && cd my-project
 # from repo
-sao egoist/template-vue
+sao egoist/template-vue try-vue
 # or from npm
-sao vue --install
+sao vue try-vue --install
 ```
 
 ## License

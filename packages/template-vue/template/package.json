@@ -1,23 +1,19 @@
 {
-  "name": "<%= name %>",
-  "description": "<%= description %>",
+  "name": "{{ name }}",
+  "description": "{{ description }}",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "vbuild -d",
-    "build": "vbuild"
+    "dev": "vue build --config config.js",
+    "build": "vue build --config config.js --prod"
   },
   "author": {
-    "name": "<%= username %>",
-    "email": "<%= email %>"
+    "name": "{{ username }}",
+    "email": "{{ email }}"
   },
   "devDependencies": {
-    "vbuild": "^4.4.0",
-    "vue-loader": "^10.0.2",
-    "vue-template-compiler": "^2.1.7"
-  },
-  "dependencies": {
-    "vue": "^2.1.7"
+    "vue-cli": "egoist-robot/vue-cli#vue-build",
+    "postcss-nested": "^1.0.0"
   }
 }
