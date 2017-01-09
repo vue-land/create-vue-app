@@ -1,6 +1,6 @@
 # template-vue
 
-An [SAO](https://github.com/egoist/sao) template for Vue.js
+A vue-cli template.
 
 ## Usage
 
@@ -11,6 +11,8 @@ vue init egoist/template-vue try-vue
 ```
 
 ### sao
+
+[SAO](https://github.com/egoist/sao)
 
 ```bash
 # install sao first
