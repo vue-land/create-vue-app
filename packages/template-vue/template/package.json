@@ -13,7 +13,7 @@
     "email": "{{ email }}"
   },
   "devDependencies": {
-    "vue-cli": "egoist-robot/vue-cli#vue-build",
+    "vue-cli": "^2.8.0",
     "postcss-nested": "^1.0.0"
   }
 }

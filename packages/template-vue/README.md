@@ -12,7 +12,7 @@ vue init egoist/template-vue try-vue
 
 ### sao
 
-[SAO](https://github.com/egoist/sao)
+Using [SAO](https://github.com/egoist/sao).
 
 ```bash
 # install sao first
