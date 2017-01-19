@@ -7,7 +7,7 @@ module.exports = {
     ]
   },
   webpack(config, options, webpack) {
-    if (options.production) {
+    if (options.production && !options.lib) {
       // Split vendor code and app code
       config.entry.vendor = ['vue']
       config.plugins.push(
