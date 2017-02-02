@@ -21,6 +21,6 @@
     "eslint-loader": "^1.6.1",
     "postcss-nested": "^1.0.0",
     "serve": "^3.1.0",
-    "vue-cli": "^2.8.0"
+    "vue-cli": "vuejs/vue-cli"
   }
 }
