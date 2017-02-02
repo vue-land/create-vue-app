@@ -4,6 +4,10 @@ const CopyPlugin = require('copy-webpack-plugin')
 module.exports = {
   port: 5000,
   entry: 'src/index.js',
+  html: {
+    title: '{{ name }}',
+    template: 'template.html'
+  },
   postcss: {
     // the plugins here will be appended to default plugins: [autoprefixer]
     plugins: [
