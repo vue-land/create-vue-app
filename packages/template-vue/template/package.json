@@ -6,14 +6,17 @@
   "license": "MIT",
   "scripts": {
     "dev": "vue build --config config.js",
-    "build": "vue build --config config.js --prod"
+    "build": "vue build --config config.js --prod",
+    "serve": "serve dist --single"
   },
   "author": {
     "name": "{{ username }}",
     "email": "{{ email }}"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
     "vue-cli": "^2.8.0",
-    "postcss-nested": "^1.0.0"
+    "postcss-nested": "^1.0.0",
+    "serve": "^3.1.0"
   }
 }

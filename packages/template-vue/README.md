@@ -2,7 +2,14 @@
 
 A vue-cli template.
 
-## Usage
+## Features
+
+- Basic setup requires no config, you only need [vue-cli](https://github.com/vuejs/vue-cli), but you can still use [config.js](/template/config.js) to customize it
+- Copy `static/**` to dist folder, useful for adding `favicon.ico`
+- Split vendor code and app code in production mode
+- Ready for small-to-medium Vue apps, and it can be easily extended to be a larger projects.
+
+## Install
 
 ### vue-cli
 
@@ -22,6 +29,21 @@ yarn global add sao
 sao egoist/template-vue vue-app
 # or from npm
 sao vue vue-app
+```
+
+### Commands
+
+You can replace `yarn` with `npm run` here.
+
+```bash
+# build for production
+yarn build
+
+# development mode
+yarn dev
+
+# serve the bundled dist folder in production mode
+yarn serve
 ```
 
 ## License
