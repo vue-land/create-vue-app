@@ -15,8 +15,12 @@
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.0.1",
-    "vue-cli": "^2.8.0",
+    "eslint": "^3.14.1",
+    "eslint-config-xo": "^0.17.0",
+    "eslint-plugin-vue": "latest",
+    "eslint-loader": "^1.6.1",
     "postcss-nested": "^1.0.0",
-    "serve": "^3.1.0"
+    "serve": "^3.1.0",
+    "vue-cli": "^2.8.0"
   }
 }

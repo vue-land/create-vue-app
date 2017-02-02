@@ -19,6 +19,13 @@ module.exports = {
           names: ['vendor', 'manifest']
         })
       )
+
+      // only apply eslint-loader in production mode
+      config.module.rules.push({
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        enforce: 'pre'
+      })
     }
 
     // copy static/** to dist/**

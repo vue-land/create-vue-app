@@ -1,3 +1,4 @@
+/* eslint-disable no-new */
 import Vue from 'vue'
 import App from './components/App.vue'
 

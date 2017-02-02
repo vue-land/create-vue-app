@@ -1,0 +1,8 @@
+{
+  "extends": "xo",
+  "plugins": ["vue"],
+  "rules": {
+    "semi": ["error", "never"],
+    "indent": [2, 2, {"SwitchCase": 1}]
+  }
+}
