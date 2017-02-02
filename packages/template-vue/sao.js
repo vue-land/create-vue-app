@@ -20,7 +20,9 @@ module.exports = {
       role: 'git:email'
     }
   },
-  post({isNewFolder, folderName, chalk}) {
+  post({isNewFolder, folderName, chalk, install, init}) {
+    install()
+    init()
     console.log(chalk.green('\n  To get started:\n'))
     if (isNewFolder) {
       console.log(`  cd ${folderName}`)

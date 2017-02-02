@@ -2,6 +2,7 @@ module.exports = {
   port: 5000,
   entry: 'src/index.js',
   postcss: {
+    // the plugins here will be appended to default plugins: [autoprefixer]
     plugins: [
       require('postcss-nested')()
     ]
