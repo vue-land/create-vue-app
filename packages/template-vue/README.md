@@ -8,7 +8,7 @@ A vue-cli template.
 - Copy `static/**` to dist folder, useful for adding `favicon.ico`
 - Split vendor code and app code in production mode
 - ESLint with [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo) in production mode
-- Ready for small-to-medium Vue apps, and it can be easily extended to be a larger projects.
+- Ready for small-to-medium Vue apps, and it can be easily extended to be a larger project.
 
 ## Install
 
