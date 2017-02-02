@@ -6,7 +6,7 @@ module.exports = {
   entry: 'src/index.js',
   html: {
     title: '{{ name }}',
-    template: 'template.html'
+    template: 'src/template.html'
   },
   postcss: {
     // the plugins here will be appended to default plugins: [autoprefixer]
