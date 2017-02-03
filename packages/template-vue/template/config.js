@@ -32,15 +32,6 @@ module.exports = {
       })
     }
 
-    // copy static/** to dist/**
-    // useful for adding favicon.ico too
-    if (fs.existsSync('static')) {
-      config.plugins.push(new CopyPlugin([{
-        from: 'static',
-        to: './'
-      }]))
-    }
-
     return config
   }
 }
