@@ -28,7 +28,7 @@ module.exports = {
   filters: {
     'app/**': 'electron'
   },
-  post({isNewFolder, folderName, chalk, install, init}) {
+  post({isNewFolder, folderName, chalk, install, init, answers}) {
     install()
     init()
     console.log(chalk.green('\n  To get started:\n'))
@@ -37,7 +37,11 @@ module.exports = {
     }
     console.log('  yarn dev')
 
-    console.log(chalk.green('\n  To build for production:\n'))
-    console.log('  yarn build\n')
+    if (answers.electron) {
+      console.log('  yarn app', chalk.dim(' # In another tab\n'))
+    } else {
+      console.log(chalk.green('\n  To build for production:\n'))
+      console.log('  yarn build\n')
+    }
   }
 }

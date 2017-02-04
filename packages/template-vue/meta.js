@@ -14,7 +14,15 @@ module.exports = {
     email: {
       message: `What's your GitHub email`,
       default: ''
+    },
+    electron: {
+      message: 'Support Electron?',
+      type: 'confirm',
+      default: false
     }
+  },
+  filters: {
+    'app/**': 'electron'
   },
   completeMessage: 'To get started:\n\n  cd {{destDirName}}\n  yarn\n  yarn dev\n'
 }
