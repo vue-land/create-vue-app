@@ -8,6 +8,7 @@ A vue-cli template.
 - Copy `static/**` to dist folder, useful for adding `favicon.ico`
 - Split vendor code and app code in production mode
 - ESLint with [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo) in production mode
+- Support Electron
 - Ready for small-to-medium Vue apps, and it can be easily extended to be a larger project.
 
 ## Install
@@ -32,20 +33,7 @@ sao egoist/template-vue vue-app
 sao vue vue-app
 ```
 
-### Commands
-
-You can replace `yarn` with `npm run` here.
-
-```bash
-# build for production
-yarn build
-
-# development mode
-yarn dev
-
-# serve the bundled dist folder in production mode
-yarn serve
-```
+[Check out the usage of this template.](/template/README.md)
 
 ## License
 

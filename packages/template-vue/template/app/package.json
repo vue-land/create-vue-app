@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "{{ name }}",
+  "description": "{{ description }}",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "{{ username }}",
+    "email": "{{ email }}"
+  },
+  "dependencies": {
+    "electron-is-dev": "^0.1.2"
+  },
+  "license": "MIT"
+}

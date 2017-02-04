@@ -18,7 +18,15 @@ module.exports = {
     email: {
       message: `What's your GitHub email`,
       role: 'git:email'
+    },
+    electron: {
+      message: 'Support Electron?',
+      type: 'confirm',
+      default: false
     }
+  },
+  filters: {
+    'app/**': 'electron'
   },
   post({isNewFolder, folderName, chalk, install, init}) {
     install()

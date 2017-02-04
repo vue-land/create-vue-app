@@ -4,6 +4,7 @@ const CopyPlugin = require('copy-webpack-plugin')
 module.exports = {
   port: 5000,
   entry: 'src/index.js',
+  dist: {{#if electron }}'app/dist'{{else}}'dist'{{/if}},
   html: {
     title: '{{ name }}',
     template: 'src/template.html'
@@ -30,7 +31,12 @@ module.exports = {
         loader: 'eslint-loader',
         enforce: 'pre'
       })
-    }
+    }{{#if electron}}
+
+    config.target = 'electron-renderer'
+    // js and others files should be relative to index.html
+    config.output.publicPath = './'
+    {{/if}}
 
     return config
   }
