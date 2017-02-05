@@ -29,10 +29,10 @@
     }
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^4.0.1",
+    "copy-webpack-plugin": "^4.0.1",{{#if electron}}
     "electron": "^1.4.15",
     "electron-builder": "^12.3.1",
-    "electron-builder-squirrel-windows": "^11.6.1",
+    "electron-builder-squirrel-windows": "^11.6.1",{{/if}}
     "eslint": "^3.14.1",
     "eslint-config-xo": "^0.17.0",
     "eslint-plugin-vue": "latest",
