@@ -13,14 +13,6 @@ A vue-cli template.
 
 ## Install
 
-### vue-cli
-
-```bash
-vue init egoist/template-vue vue-app
-```
-
-### sao
-
 Using [SAO](https://github.com/egoist/sao).
 
 ```bash
@@ -28,9 +20,9 @@ Using [SAO](https://github.com/egoist/sao).
 yarn global add sao
 
 # from repo
-sao egoist/template-vue vue-app
+sao egoist/template-vue vue-app --install
 # or from npm
-sao vue vue-app
+sao vue vue-app --install
 ```
 
 [Check out the usage of this template.](/template/README.md)

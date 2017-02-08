@@ -28,6 +28,9 @@ module.exports = {
   filters: {
     'app/**': 'electron'
   },
+  move: {
+    'gitignore': '.gitignore'
+  },
   post({isNewFolder, folderName, chalk, install, init, answers}) {
     install()
     init()
