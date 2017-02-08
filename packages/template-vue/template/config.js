@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
@@ -29,7 +30,13 @@ module.exports = {
       config.module.rules.push({
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
-        enforce: 'pre'
+        enforce: 'pre',
+        exclude: [/node_modules/],
+        options: {
+          configFile: path.resolve('.eslintrc'),
+          useEslintrc: false,
+          fix: true
+        }
       })
     }{{#if electron}}
 
