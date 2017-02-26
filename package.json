@@ -34,6 +34,9 @@
     "esnext": true,
     "envs": [
       "jest"
+    ],
+    "ignores": [
+      "template/**"
     ]
   },
   "dependencies": {
@@ -41,9 +44,9 @@
     "co": "^4.6.0",
     "inquirer": "^3.0.4",
     "kopy": "^5.0.2",
-    "meow": "^3.7.0",
     "shelljs": "^0.7.6",
     "tildify": "^1.2.0",
+    "yargs": "^6.6.0",
     "yarn-install": "^0.2.1"
   }
 }

@@ -1,5 +1,5 @@
-const createVueApp = require('../')
+const init = require('../bin/init')
 
 test('main', () => {
-  expect(typeof createVueApp).toBe('function')
+  expect(typeof init).toBe('function')
 })

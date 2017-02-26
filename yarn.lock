@@ -2396,7 +2396,7 @@ marked@^0.3.6:
   version "0.3.6"
   resolved "https://registry.npmjs.org/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
 
-meow@^3.4.2, meow@^3.7.0:
+meow@^3.4.2:
   version "3.7.0"
   resolved "https://registry.npmjs.org/meow/-/meow-3.7.0.tgz#72cb668b425228290abbfa856892587308a801fb"
   dependencies:
@@ -3688,7 +3688,7 @@ yargs-parser@^4.2.0:
   dependencies:
     camelcase "^3.0.0"
 
-yargs@^6.3.0:
+yargs@^6.3.0, yargs@^6.6.0:
   version "6.6.0"
   resolved "https://registry.npmjs.org/yargs/-/yargs-6.6.0.tgz#782ec21ef403345f830a808ca3d513af56065208"
   dependencies:
