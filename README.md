@@ -25,8 +25,10 @@ yarn global add create-vue-app
 
 ## Usage
 
-```js
+```bash
 create-vue-app my-app
+# you can also use the alias `cva`
+# cva my-app
 ```
 
 And you're all set, follow the instructions in terminal and start writing app!
