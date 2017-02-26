@@ -11,7 +11,7 @@ cd my-app
 yarn dev
 ```
 
-And then you can go to `http://localhost:400` and start coding!
+And then you can go to `http://localhost:4000` and start coding!
 
 <img src="https://cloud.githubusercontent.com/assets/8784712/23340906/761acafa-fc79-11e6-9586-c9dbb2b959c0.png" width="540" />
 

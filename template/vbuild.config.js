@@ -1,7 +1,7 @@
 const path = require('path')
 
 // this will copy ./static/** to ./dist/**
-module.exports = (options, req) => ({
+module.exports = options => ({
   entry: 'src/index.js',<% if (type === 'electron') { %>
   dist: 'app/dist',<% } %>
   postcss: [
