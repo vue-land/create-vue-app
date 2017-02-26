@@ -1,0 +1,12 @@
+{
+  "name": "<%= name %>",
+  "productionName": "<%= name %>",
+  "description": "Electron app built with vbuild",
+  "version": "0.0.0",
+  "repository": {},
+  "dependencies": {
+    "electron-is-dev": "^0.1.2"
+  },
+  "author": "Your Name <your@gmail.com>",
+  "license": "MIT"
+}
