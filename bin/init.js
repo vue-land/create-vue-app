@@ -155,7 +155,7 @@ module.exports = co.wrap(function * (options) {
     console.log('\n  yarn build\n')
   }
 
-  console.log(chalk.dim(`For more usage, please view ${merged.name}/README.md\n`))
+  console.log(chalk.bold(`For more usage, please view ${merged.name}/README.md\n`))
 })
 
 function move(dir, from, to) {

@@ -31,6 +31,8 @@ create-vue-app my-app
 
 And you're all set, follow the instructions in terminal and start writing app!
 
+<img src="https://cloud.githubusercontent.com/assets/8784712/23341568/f9c9904c-fc84-11e6-9d70-0de443bb4140.png" width="540" />
+
 ## FAQ
 
 <details><summary>Is it similar to create-react-app?</summary>

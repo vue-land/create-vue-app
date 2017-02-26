@@ -16,12 +16,17 @@ module.exports = options => ({
       config.output.publicPath = './'
     }
     config.target = 'electron-renderer'
-    <% } %><% if (pwa) { %>
-    config.plugins.push(new OfflinePlugin({
-      ServiceWorker: {
-        events: true
-      }
-    }))<% } %>
+    <% } %>
+    <%_ if (pwa) { -%>
+    // inject offline-plugin in production build
+    if (!options.dev) {
+      config.plugins.push(new OfflinePlugin({
+        ServiceWorker: {
+          events: true
+        }
+      }))
+    }
+    <%_ } -%>
 
     return config
   }
