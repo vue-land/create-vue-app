@@ -27,9 +27,9 @@
     "example": "vbuild -c vbuild.example.js -d",
     "deploy": "vbuild -c vbuild.example.js && gh-pages -d dist-example"
     <%_  } else { -%>
-    "lint": "vbuild -c --eslint",
-    "dev": "vbuild -dc",
-    "build": "vbuild -c"
+    "lint": "vbuild --eslint",
+    "dev": "vbuild -d",
+    "build": "vbuild"
     <%_ } -%>
   },
   <%_ if (type === 'electron') { -%>
