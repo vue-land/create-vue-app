@@ -3,6 +3,7 @@
   "private": true,
   <%_ } -%>
   "name": "<%= name %>",
+  "description": "<%= description %>",
   "version": "0.0.0",
   "repository": {},
   <%_ if (type === 'component') { -%>
@@ -52,6 +53,9 @@
     <%_ } -%>
     <%_ if (type === 'component') { -%>
     "gh-pages": "^0.12.0",
+    <%_ } -%>
+    <%_ if (pwa) { -%>
+    "offline-plugin": "^4.6.1",
     <%_ } -%>
     "vbuild": "^6.0.0"
   },

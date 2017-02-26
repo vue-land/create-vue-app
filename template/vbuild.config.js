@@ -1,4 +1,5 @@
-const path = require('path')
+const path = require('path')<% if (pwa) { %>
+const OfflinePlugin = require('offline-plugin')<% } %>
 
 // this will copy ./static/** to ./dist/**
 module.exports = options => ({
@@ -8,14 +9,20 @@ module.exports = options => ({
     // add more postcss plugins here
     // by default we have autoprefixer pre added
   ],
-  webpack(cfg) {
-    cfg.resolve.modules.push(path.resolve('src'))
+  webpack(config) {
+    config.resolve.modules.push(path.resolve('src'))
     <% if (type === 'electron') { %>
     if (!options.dev) {
-      cfg.output.publicPath = './'
+      config.output.publicPath = './'
     }
-    cfg.target = 'electron-renderer'
-    <% } %>
-    return cfg
+    config.target = 'electron-renderer'
+    <% } %><% if (pwa) { %>
+    config.plugins.push(new OfflinePlugin({
+      ServiceWorker: {
+        events: true
+      }
+    }))<% } %>
+
+    return config
   }
 })

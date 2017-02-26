@@ -1,5 +1,7 @@
 # <%= name %>
 
+<%= description %>
+
 <%_ if (type === 'component') { -%>
 ## Install
 
@@ -62,6 +64,8 @@ import <%= moduleName %> from '<%= name %>'
 - `yarn dist:win`: Distribute Electron app for windows
 - `yarn dist:linux`: Distribute Electron app for linux
 <%_ } -%>
+
+Check out your npm scripts, it's using [vbuild](https://github.com/egoist/vbuild) under the hood.
 
 ---
 

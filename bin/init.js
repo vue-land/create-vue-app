@@ -4,6 +4,7 @@ const path = require('path')
 const co = require('co')
 const $ = require('shelljs')
 const tildify = require('tildify')
+const superb = require('superb')
 const install = require('yarn-install')
 const kopy = require('kopy')
 const chalk = require('chalk')
@@ -34,7 +35,9 @@ module.exports = co.wrap(function * (options) {
 
   const defaults = Object.assign({
     type: '',
-    moduleName: ''
+    moduleName: '',
+    description: `My ${superb()} Vue app`,
+    pwa: false
   }, options)
 
   if (defaults.type) {
@@ -47,6 +50,11 @@ module.exports = co.wrap(function * (options) {
       name: 'name',
       default: defaults.name,
       message: 'Choose the name for your new project:'
+    },
+    {
+      name: 'description',
+      default: defaults.description,
+      message: 'Briefly describe your new project:'
     },
     {
       name: 'type',
@@ -70,6 +78,13 @@ module.exports = co.wrap(function * (options) {
       default(answers) {
         return answers.name.replace(/[-_.]([\w])/, (_, p1) => p1.toUpperCase())
       }
+    },
+    {
+      name: 'pwa',
+      message: 'Do you want to add progressive web app support? (require https in production)',
+      type: 'confirm',
+      default: defaults.pwa,
+      when: answers => answers.type === 'web'
     }
   ]
 
@@ -81,7 +96,8 @@ module.exports = co.wrap(function * (options) {
       'example/**': 'type === "component"',
       'vbuild.config.js': 'type !== "component"',
       'vbuild.{example,component}.js': 'type === "component"',
-      'static/favicon.ico': 'type !== "electron"'
+      'static/favicon.ico': 'type !== "electron"',
+      'src-normal/pwa.js': 'pwa'
     }
   }
 
@@ -109,7 +125,8 @@ module.exports = co.wrap(function * (options) {
     move(dest, 'src-normal', 'src')
   }
 
-  console.log('\n> Installing vbuild in project:\n')
+  console.log('\n> Installing vbuild in project:')
+  console.log('> https://github.com/egoist/vbuild\n')
   install({cwd: dest})
 
   console.log(`\n${chalk.bgGreen.black(' DONE ')} Successfully generated into ${chalk.yellow(tildify(dest))}!\n`)
