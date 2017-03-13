@@ -53,6 +53,11 @@ The difference is that, it's hard to gracefully use `react-scripts` in other Rea
 This project starts as a built-in command called `vbuild init` in vbuild itself. But we think it's not a must for `vbuild` and can be handled elsewhere. So it turned into `create-vue-app`.
 </details>
 
+<details><summary>How to upgrade?</summary>
+
+Simply upgrade `vbuild` in your project, eg: `yarn upgrade vbuild`
+</details>
+
 ## Contributing
 
 1. Fork it!
