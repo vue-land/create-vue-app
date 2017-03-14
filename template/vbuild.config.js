@@ -10,7 +10,6 @@ module.exports = options => ({
     // by default we have autoprefixer pre added
   ],
   webpack(config) {
-    config.resolve.modules.push(path.resolve('src'))
     <% if (type === 'electron') { %>
     if (!options.dev) {
       config.output.publicPath = './'
