@@ -16,7 +16,7 @@
     "cva": "bin/cva.js"
   },
   "scripts": {
-    "test": "jest && npm run lint",
+    "test": "jest test/*.test.js && npm run lint",
     "lint": "xo"
   },
   "author": "egoist <0x142857@gmail.com>",
