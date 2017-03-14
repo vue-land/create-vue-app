@@ -41,6 +41,14 @@ We use [vbuild-karma](https://github.com/egoist/vbuild-karma) to test your compo
 
 <img src="https://ooo.0o0.ooo/2017/03/15/58c821c720711.png" width="540" alt="test" />
 
+## CLI args
+
+You can always omit CLI args to enter interactive CLI interface.
+
+### `--type`
+
+App type, oneOf: `web` `component` `electron`.
+
 ## FAQ
 
 <details><summary>Is it similar to create-react-app?</summary>
