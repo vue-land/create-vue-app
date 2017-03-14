@@ -37,7 +37,8 @@ module.exports = co.wrap(function * (options) {
     type: '',
     moduleName: '',
     description: `My ${superb()} Vue app`,
-    pwa: false
+    pwa: false,
+    unit: false
   }, options)
 
   if (defaults.type) {
@@ -85,6 +86,12 @@ module.exports = co.wrap(function * (options) {
       type: 'confirm',
       default: defaults.pwa,
       when: answers => answers.type === 'web'
+    },
+    {
+      name: 'unit',
+      message: 'Do you want to add unit tests for your app?',
+      type: 'confirm',
+      default: defaults.unit
     }
   ]
 
@@ -97,7 +104,10 @@ module.exports = co.wrap(function * (options) {
       'vbuild.config.js': 'type !== "component"',
       'vbuild.{example,component}.js': 'type === "component"',
       'static/favicon.ico': 'type !== "electron"',
-      'src-normal/pwa.js': 'pwa'
+      'src-normal/pwa.js': 'pwa',
+      'vbuild.unit.js': 'unit',
+      'test/**': 'unit',
+      'test/unit/**': 'unit'
     }
   }
 

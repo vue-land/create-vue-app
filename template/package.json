@@ -12,6 +12,9 @@
   <%_ } -%>
   "scripts": {
     "test": "echo lol",
+    <%_ if (unit) { -%>
+    "test:unit": "vbuild -c vbuild.unit.js",
+    <% } %>
     <%_ if (type === 'electron') { -%>
     "app": "electron app/",
     "dist": "npm run dist:mac && npm run dist:win && npm run dist:linux",
@@ -56,6 +59,9 @@
     <%_ } -%>
     <%_ if (pwa) { -%>
     "offline-plugin": "^4.6.1",
+    <%_ } -%>
+    <%_ if (unit) { -%>
+    "vbuild-karma": "^1.0.0",
     <%_ } -%>
     "vbuild": "^6.0.0"
   },
