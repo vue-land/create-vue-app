@@ -37,7 +37,7 @@ And you're all set, follow the instructions in terminal and start writing app!
 
 ### Unit tests
 
-We use [vbuild-karma](https://github.com/egoist/vbuild-karma) to tests your components:
+We use [vbuild-karma](https://github.com/egoist/vbuild-karma) to test your components:
 
 <img src="https://ooo.0o0.ooo/2017/03/15/58c821c720711.png" width="540" alt="test" />
 

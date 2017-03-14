@@ -41,6 +41,9 @@ import <%= moduleName %> from '<%= name %>'
 <%_ } else { -%>
 - `vbuild.config.js`: Config file for vbuild
 <%_ } -%>
+<%_ if (unit) { -%>
+- `vbuild.unit.js`: Config file for vbuild to run unit tests
+<%_ } -%>
 - `package.json`: App manifest
 - `.editorconfig`: Ensure consistent editor behaivor
 - `.gitignore`: Ignore files we don't need to push
@@ -58,6 +61,9 @@ import <%= moduleName %> from '<%= name %>'
 - `yarn build`: Build in production mode
 <%_ } -%>
 - `yarn lint`: Run eslint
+<%_ if (unit) { -%>
+- `yarn test:unit`: Run unit tests using [vbuild-karma](https://github.com/egoist/vbuild-karma)
+<%_ } -%>
 <%_ if (type === 'electron') { -%>
 - `yarn dist`: Distribute Electron app for mac/windows/linux
 - `yarn dist:mac`: Distribute Electron app for mac
