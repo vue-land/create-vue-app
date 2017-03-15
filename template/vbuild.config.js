@@ -1,7 +1,6 @@
 const path = require('path')<% if (pwa) { %>
 const OfflinePlugin = require('offline-plugin')<% } %>
 
-// this will copy ./static/** to ./dist/**
 module.exports = options => ({
   entry: 'src/index.js',<% if (type === 'electron') { %>
   dist: 'app/dist',<% } %>
