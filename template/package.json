@@ -39,20 +39,29 @@
   <%_ if (type === 'electron') { -%>
   "build": {
     "appId": "com.egoistian.devdocs-app",
-    "category": "public.app-category.developer-tools",
     "asar": true,
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    },
+    "linux": {
+      "category": "public.app-category.developer-tools"
+    },
     "win": {
       "target": [
-        "squirrel"
+        "nsis"
       ]
+    },
+    "nsis": {
+      "oneClick": false
     }
   },
   <%_ } -%>
   "devDependencies": {
     <%_ if (type === 'electron') { -%>
     "electron": "^1.4.15",
-    "electron-builder": "^13.7.0",
-    "electron-devtools-installer": "^1.1.5",
+    "electron-builder": "^15.0.0",
+    "electron-builder-squirrel-windows": "^15.3.0",
+    "electron-devtools-installer": "^2.0.0",
     <%_ } -%>
     <%_ if (type === 'component') { -%>
     "gh-pages": "^0.12.0",
