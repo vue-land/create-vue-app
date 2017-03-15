@@ -8,14 +8,13 @@ module.exports = options => ({
   postcss: [
     // add more postcss plugins here
     // by default we have autoprefixer pre added
-  ],
+  ],<% if (type === 'electron') { %>
+  // resource in electron app must be loaded from relative path in production mode
+  homepage: './'<% } %>
   webpack(config) {
-    <% if (type === 'electron') { %>
-    if (!options.dev) {
-      config.output.publicPath = './'
-    }
+    <%_ if (type === 'electron') { -%>
     config.target = 'electron-renderer'
-    <% } %>
+    <%_ } -%>
     <%_ if (pwa) { -%>
     // inject offline-plugin in production build
     if (!options.dev) {
