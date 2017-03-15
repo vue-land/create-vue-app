@@ -6,7 +6,7 @@
 
 ```bash
 yarn global add create-vue-app
-create-vue-app my-app --type=web
+create-vue-app my-app
 cd my-app
 yarn dev
 ```
@@ -40,14 +40,6 @@ And you're all set, follow the instructions in terminal and start writing app!
 We use [vbuild-karma](https://github.com/egoist/vbuild-karma) to test your components:
 
 <img src="https://ooo.0o0.ooo/2017/03/15/58c821c720711.png" width="540" alt="test" />
-
-## CLI args
-
-You can always omit CLI args to enter interactive CLI interface.
-
-### `--type`
-
-App type, oneOf: `web` `component` `electron`.
 
 ## FAQ
 
