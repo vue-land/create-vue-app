@@ -15,6 +15,13 @@ And then you can go to `http://localhost:4000` and start coding!
 
 <img src="https://cloud.githubusercontent.com/assets/8784712/23340906/761acafa-fc79-11e6-9586-c9dbb2b959c0.png" width="540" />
 
+## Features
+
+- Build Web app
+- Build Vue component
+- Build Electron app
+- Optionally unit test with Karma
+
 ## Install
 
 You can use `npm` if you like, but `yarn` would save a lot time here.
