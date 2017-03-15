@@ -9,7 +9,7 @@ module.exports = options => ({
     // by default we have autoprefixer pre added
   ],<% if (type === 'electron') { %>
   // resource in electron app must be loaded from relative path in production mode
-  homepage: './'<% } %>
+  homepage: './',<% } %>
   webpack(config) {
     <%_ if (type === 'electron') { -%>
     config.target = 'electron-renderer'
