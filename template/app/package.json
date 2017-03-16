@@ -5,7 +5,9 @@
   "version": "0.0.0",
   "repository": {},
   "dependencies": {
-    "electron-is-dev": "^0.1.2"
+    "electron-is-dev": "^0.1.2",
+    "electron-config": "^0.2.1",
+    "electron-context-menu": "^0.8.0"
   },
   "author": "Your Name <your@gmail.com>",
   "license": "MIT"
