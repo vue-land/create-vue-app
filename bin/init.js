@@ -107,7 +107,8 @@ module.exports = co.wrap(function * (options) {
       'src-normal/pwa.js': 'pwa',
       'vbuild.unit.js': 'unit',
       'test/**': 'unit',
-      'test/unit/**': 'unit'
+      'test/unit/**': 'unit',
+      'index.html': 'electron'
     }
   }
 
