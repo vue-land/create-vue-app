@@ -4,10 +4,7 @@ const OfflinePlugin = require('offline-plugin')<% } %>
 module.exports = options => ({
   entry: 'src/index.js',<% if (type === 'electron') { %>
   dist: 'app/dist',<% } %>
-  postcss: [
-    // add more postcss plugins here
-    // by default we have autoprefixer pre added
-  ],<% if (type === 'electron') { %>
+  <% if (type === 'electron') { %>
   env: {
     APP_MODULES: path.resolve('./app/node_modules')
   },
@@ -25,7 +22,7 @@ module.exports = options => ({
     <%_ } -%>
     <%_ if (pwa) { -%>
     // inject offline-plugin in production build
-    if (!options.dev) {
+    if (options.mode === 'production') {
       config.plugins.push(new OfflinePlugin({
         ServiceWorker: {
           events: true

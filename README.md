@@ -20,7 +20,6 @@ And then you can go to `http://localhost:4000` and start coding!
 - Build Web app
 - Build Vue component
 - Build Electron app
-- Optionally unit test with Karma
 
 ## Install
 
@@ -41,12 +40,6 @@ create-vue-app my-app
 And you're all set, follow the instructions in terminal and start writing app!
 
 <img src="https://cloud.githubusercontent.com/assets/8784712/23341568/f9c9904c-fc84-11e6-9d70-0de443bb4140.png" width="540" />
-
-### Unit tests
-
-We use [vbuild-karma](https://github.com/egoist/vbuild-karma) to test your components:
-
-<img src="https://ooo.0o0.ooo/2017/03/15/58c821c720711.png" width="540" alt="test" />
 
 ## FAQ
 
