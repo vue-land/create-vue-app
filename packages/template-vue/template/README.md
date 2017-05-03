@@ -6,8 +6,6 @@
 
 You can replace `yarn` with `npm run` here.
 
-#### Web app
-
 ```bash
 # build for production
 yarn build
@@ -19,6 +17,6 @@ yarn dev
 yarn serve
 ```
 
-## More
+---
 
 This project is generated from [template-vue](https://github.com/egoist/template-vue).
