@@ -10,7 +10,7 @@ Using [SAO](https://github.com/egoist/sao).
 # Install sao first
 yarn global add sao
 
-# From git repo
+# Generate project from git repo
 sao egoist/template-vue folder-name
 # Or from npm
 sao vue folder-name
