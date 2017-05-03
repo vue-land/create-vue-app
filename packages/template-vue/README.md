@@ -1,6 +1,6 @@
 # template-vue
 
-Scffold out a Vue.js project which uses Poi.
+Scaffold out a Vue.js project which uses Poi.
 
 ## Install
 
