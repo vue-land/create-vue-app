@@ -5,7 +5,7 @@ module.exports = {
   prompts: {
     name: {
       message: `What's the name of your new project?`,
-      role: 'folder:name'
+      default: ':folderName:'
     },
     description: {
       message: 'How would your descripe your superb project?',
@@ -13,38 +13,17 @@ module.exports = {
     },
     username: {
       message: `What's your GitHub username`,
-      role: 'git:name'
+      default: ':gitUser:'
     },
     email: {
       message: `What's your GitHub email`,
-      role: 'git:email'
-    },
-    electron: {
-      message: 'Support Electron?',
-      type: 'confirm',
-      default: false
+      default: ':gitEmail:'
     }
-  },
-  filters: {
-    'app/**': 'electron'
   },
   move: {
     'gitignore': '.gitignore'
   },
-  post({isNewFolder, folderName, chalk, install, init, answers}) {
-    install()
-    init()
-    console.log(chalk.green('\n  To get started:\n'))
-    if (isNewFolder) {
-      console.log(`  cd ${folderName}`)
-    }
-    console.log('  yarn dev')
-
-    if (answers.electron) {
-      console.log('  yarn app', chalk.dim(' # In another tab\n'))
-    } else {
-      console.log(chalk.green('\n  To build for production:\n'))
-      console.log('  yarn build\n')
-    }
-  }
+  gitInit: true,
+  installDependencies: true,
+  showTip: true
 }

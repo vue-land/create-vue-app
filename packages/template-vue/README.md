@@ -1,28 +1,19 @@
 # template-vue
 
-A vue-cli template.
-
-## Features
-
-- Basic setup requires no config, you only need [vue-cli](https://github.com/vuejs/vue-cli), but you can still use [config.js](/template/config.js) to customize it
-- Copy `static/**` to dist folder, useful for adding `favicon.ico`
-- Split vendor code and app code in production mode
-- ESLint with [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo) in production mode
-- Support Electron
-- Ready for small-to-medium Vue apps, and it can be easily extended to be a larger project.
+Scffold out a Vue.js project which uses Poi.
 
 ## Install
 
 Using [SAO](https://github.com/egoist/sao).
 
 ```bash
-# install sao first
+# Install sao first
 yarn global add sao
 
-# from repo
-sao egoist/template-vue vue-app --install
-# or from npm
-sao vue vue-app --install
+# From git repo
+sao egoist/template-vue folder-name
+# Or from npm
+sao vue folder-name
 ```
 
 [Check out the usage of this template.](/template/README.md)

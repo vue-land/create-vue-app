@@ -5,40 +5,17 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "vue build --config config.js",
-    "build": "vue build --config config.js --prod",
-    "serve": "serve dist --single"{{#if electron}},
-    "postinstall": "install-app-deps",
-    "mac": "build --mac",
-    "linux": "build --linux deb tar.xz",
-    "win": "build --win --ia32",
-    "app": "electron app/index.js"{{/if}}
+    "dev": "poi",
+    "build": "poi build",
+    "serve": "serve dist --single"
   },
   "author": {
     "name": "{{ username }}",
     "email": "{{ email }}"
   },
-  "build": {
-    "appId": "com.your-company.app",
-    "category": "public.app-category.utilities",
-    "asar": true,
-    "win": {
-      "target": [
-        "squirrel"
-      ]
-    }
-  },
   "devDependencies": {
-    "copy-webpack-plugin": "^4.0.1",{{#if electron}}
-    "electron": "^1.4.15",
-    "electron-builder": "^12.3.1",
-    "electron-builder-squirrel-windows": "^11.6.1",{{/if}}
-    "eslint": "^3.14.1",
-    "eslint-config-xo": "^0.17.0",
-    "eslint-plugin-vue": "latest",
-    "eslint-loader": "^1.6.1",
+    "poi": "^8.0.0-rc.4",
     "postcss-nested": "^1.0.0",
-    "serve": "^3.1.0",
-    "vue-cli": "vuejs/vue-cli"
+    "serve": "^3.1.0"
   }
 }
