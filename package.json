@@ -1,0 +1,37 @@
+{
+  "name": "create-vue-app",
+  "version": "0.0.0",
+  "description": "Create Vue apps with no build configuration.",
+  "repository": {
+    "url": "egoist/create-vue-app",
+    "type": "git"
+  },
+  "bin": "cli.js",
+  "files": [
+    "cli.js"
+  ],
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "xo"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "sao": "^0.19.3",
+    "template-vue": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-rem": "^3.0.0",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": "rem/prettier",
+    "esnext": true,
+    "envs": [
+      "jest"
+    ]
+  }
+}
