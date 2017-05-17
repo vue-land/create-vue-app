@@ -11,7 +11,10 @@ You can replace `yarn` with `npm run` here.
 yarn build
 
 # development mode
-yarn dev
+yarn dev{{#karma}}
+
+# run unit tests with karma
+yarn test{{/karma}}
 
 # serve the bundled dist folder in production mode
 yarn serve

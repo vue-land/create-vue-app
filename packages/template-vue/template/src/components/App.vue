@@ -6,6 +6,7 @@
 
 <script>
   export default {
+    name: 'app',
     data() {
       return {time: new Date().toLocaleString()}
     },

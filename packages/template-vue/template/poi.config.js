@@ -12,5 +12,10 @@ module.exports = {
     plugins: [
       require('postcss-nested')()
     ]
-  }
+  },
+  presets: [{{#karma}}
+    require('poi-preset-karma')({
+      files: 'src/**/*.test.js'
+    })
+  {{/karma}}]
 }
