@@ -20,8 +20,8 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "sao": "^0.19.3",
-    "template-vue": "^2.0.0"
+    "sao": "^0.19.4",
+    "template-vue": "^2.3.1"
   },
   "devDependencies": {
     "eslint-config-rem": "^3.0.0",
