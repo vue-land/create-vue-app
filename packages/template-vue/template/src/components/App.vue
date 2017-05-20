@@ -11,7 +11,7 @@
     </div>
     <div class="bottom">
       <p>
-        To get started, edit <code>./src/index.js</code> and save to reload.<br/>
+        To get started, edit <code>./src/components/App.vue</code> and save to reload.<br/>
         <span :class="$style.fade">
           Checkout <code>./README.md</code> for more usages.
         </span>
