@@ -20,6 +20,7 @@
     "testEnvironment": "node"
   },
   "dependencies": {
+    "cross-spawn": "^5.1.0",
     "sao": "^0.19.4",
     "template-vue": "^2.3.1"
   },
