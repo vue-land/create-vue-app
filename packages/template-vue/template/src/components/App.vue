@@ -1,6 +1,13 @@
 <template>
   <div id="app">
-    <h1>Hello, {{ time }}</h1>
+    <div class="banner">
+      <img
+        src="https://vuejs.org/images/logo.png"
+        width="300"
+        alt="vue"
+      />
+      <h1>Hello, {{ time }}</h1>
+    </div>
   </div>
 </template>
 
@@ -27,5 +34,13 @@
 
   #app h1 {
     color: red;
+  }
+
+  .banner {
+    height: 50%;
+  }
+
+  .bottom {
+    height: 50%;
   }
 </style>
