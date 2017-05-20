@@ -1,25 +1,27 @@
 {
   "private": true,
-  "name": "{{ name }}",
-  "description": "{{ description }}",
+  "name": "<%= name %>",
+  "productName": "<%= name %>",
+  "description": "<%= description %>",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "poi",
     "build": "poi build",
-    "serve": "serve dist --single"{{#karma}},
-    "test": "poi test"
-    {{/karma}}
+    "serve": "serve dist --single"<% if (karma) { %>,
+    "test": "poi test"<% } %>
   },
   "author": {
-    "name": "{{ username }}",
-    "email": "{{ email }}"
+    "name": "<%= username %>",
+    "email": "<%= email %>"
+  },
+  "dependencies": {
+    <% if (pwa) { %>"offline-plugin": "^4.8.0"<% } %>
   },
   "devDependencies": {
-    "poi": "^8.0.0-rc.4",
-    "postcss-nested": "^1.0.0",
-    "serve": "^3.1.0"{{#karma}},
-    "poi-preset-karma": "^8.0.0-rc.10"
-    {{/karma}}
+    "poi": "^8.0.0",
+    "serve": "^3.1.0"<% if (karma) { %>,
+    "poi-preset-karma": "^8.0.0"<% } %><% if (pwa) { %>,
+    "poi-preset-offline": "^8.0.0"<% } %>
   }
 }

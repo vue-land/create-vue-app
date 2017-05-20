@@ -4,18 +4,22 @@ const pkg = require('./package')
 module.exports = {
   entry: 'src/index.js',
   html: {
-    title: '{{ name }}',
+    title: pkg.productName,
     description: pkg.descrption,
     template: path.join(__dirname, 'index.ejs')
   },
   postcss: {
     plugins: [
-      require('postcss-nested')()
+      // Your postcss plugins
     ]
-  },
-  presets: [{{#karma}}
-    require('poi-preset-karma')({
+  }<% if (karma || pwa) { %>,
+  presets: [
+    <% if (karma) { %>require('poi-preset-karma')({
       files: 'src/**/*.test.js'
-    })
-  {{/karma}}]
+    })<% } %><% if (pwa) { %><% if (karma){ %>,<% } %>
+    require('poi-preset-offline')({
+      pwa: './src/pwa.js', // Path to pwa runtime entry
+      pluginOptions: {} // Additional options for offline-plugin
+    })<% } %>
+  ]<% } %>
 }

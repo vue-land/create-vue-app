@@ -1,6 +1,6 @@
-# {{ name }}
+# <%= name %>
 
-> {{ description }}
+> <%= description %>
 
 ## Commands
 
@@ -11,24 +11,23 @@ You can replace `yarn` with `npm run` here.
 yarn build
 
 # development mode
-yarn dev{{#karma}}
+yarn dev<% if (karma) { %>
 
 # run unit tests with karma
-yarn test{{/karma}}
+yarn test<% } %>
 
 # serve the bundled dist folder in production mode
 yarn serve
 ```
 
-{{#karma}}
+<% if (karma) { %>
 ## Test
 
 By default Karma uses mocha and chrome to run your tests, you can choose your own assetion library like [chai](http://chaijs.com).
 
 To run it in watch mode, you can type: `yarn test -- --watch`.
 
-For all the available options, please head to [poi-preset-karma](https://github.com/egoist/poi/tree/master/packages/poi-preset-karma#options).
-{{/karma}}
+For all the available options, please head to [poi-preset-karma](https://github.com/egoist/poi/tree/master/packages/poi-preset-karma#options).<% } %>
 
 ---
 

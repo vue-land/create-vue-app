@@ -1,7 +1,6 @@
 const superb = require('superb')
 
 module.exports = {
-  template: 'handlebars',
   prompts: {
     name: {
       message: `What's the name of your new project`,
@@ -14,7 +13,12 @@ module.exports = {
     karma: {
       type: 'confirm',
       default: false,
-      message: 'Add Karma to run unit tests'
+      message: 'Setup unit tests with Karma'
+    },
+    pwa: {
+      type: 'confirm',
+      default: true,
+      message: 'Add Progress Web App support'
     },
     username: {
       message: `What's your GitHub username`,
@@ -29,8 +33,10 @@ module.exports = {
     'gitignore': '.gitignore'
   },
   filters: {
-    '**/*.test.js': 'karma'
+    '**/*.test.js': 'karma',
+    'src/pwa.js': "pwa"
   },
+  skipInterpolation: ['index.ejs'],
   gitInit: true,
   installDependencies: true,
   showTip: true

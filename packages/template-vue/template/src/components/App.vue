@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Hello, \{{ time }}</h1>
+    <h1>Hello, {{ time }}</h1>
   </div>
 </template>
 
@@ -18,13 +18,14 @@
   }
 </script>
 
-<style>
+<style scoped>
   #app {
     display: flex;
     align-items: center;
     justify-content: center;
-    h1 {
-      color: red;
-    }
+  }
+
+  #app h1 {
+    color: red;
   }
 </style>
