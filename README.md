@@ -26,7 +26,7 @@ create-vue-app my-vue-app
 cd my-vue-app
 ```
 
-Alternatively, if you have Yarn^0.25, you can use the `yarn create` command:
+Alternatively, if you have Yarn^0.24, you can use the `yarn create` command:
 
 ```bash
 yarn create vue-app my-vue-app
