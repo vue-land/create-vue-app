@@ -44,7 +44,6 @@ module.exports = {
     'static/manifest.json': 'manifest',
     'static/icons/**': 'manifest'
   },
-  skipInterpolation: ['index.ejs'],
   gitInit: true,
   installDependencies: true,
   post(_) {
