@@ -47,5 +47,15 @@ module.exports = {
   skipInterpolation: ['index.ejs'],
   gitInit: true,
   installDependencies: true,
-  showTip: true
+  post(_) {
+    _.showTip()
+    console.log(_.chalk.cyan('\n  To develop it:'))
+    console.log('\n    yarn dev')
+
+    console.log(_.chalk.cyan('\n  To build for production:'))
+    console.log('\n    yarn build')
+
+    console.log(_.chalk.dim('\n  For more usages, please check out ./README.md'))
+    console.log()
+  }
 }
