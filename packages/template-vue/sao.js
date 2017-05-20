@@ -20,6 +20,12 @@ module.exports = {
       default: true,
       message: 'Add Progress Web App support'
     },
+    manifest: {
+      type: 'confirm',
+      default: true,
+      when: 'pwa',
+      message: 'Use default manifest.json and icons for PWA'
+    },
     username: {
       message: `What's your GitHub username`,
       default: ':gitUser:'
@@ -34,7 +40,9 @@ module.exports = {
   },
   filters: {
     '**/*.test.js': 'karma',
-    'src/pwa.js': "pwa"
+    'src/pwa.js': "pwa",
+    'static/manifest.json': 'manifest',
+    'static/icons/**': 'manifest'
   },
   skipInterpolation: ['index.ejs'],
   gitInit: true,
