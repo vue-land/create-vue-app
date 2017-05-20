@@ -1,5 +1,7 @@
 # template-vue
 
+[![NPM version](https://img.shields.io/npm/v/template-vue.svg?style=flat)](https://npmjs.com/package/template-vue) [![NPM downloads](https://img.shields.io/npm/dm/template-vue.svg?style=flat)](https://npmjs.com/package/template-vue) [![CircleCI](https://circleci.com/gh/egoist/template-vue/tree/master.svg?style=shield)](https://circleci.com/gh/egoist/template-vue/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
+
 Scaffold out a Vue.js project which uses Poi.
 
 ## Features
