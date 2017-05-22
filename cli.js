@@ -12,12 +12,13 @@ const cli = yargs
     desc: 'Display the version of package "template-vue"'
   })
   .example('$0 my-project', 'Generate a new project in "my-project" folder')
-  .epilogue('If you have any problems, do not hesitate to file an issue:\n https://github.com/egoist/create-vue-app/issues/new')
+  .epilogue(
+    'If you have any problems, do not hesitate to file an issue:\n https://github.com/egoist/create-vue-app/issues/new'
+  )
   .alias('v', 'version')
   .alias('h', 'help')
   .version(pkg.version)
-  .help()
-  .argv
+  .help().argv
 
 if (cli.templateVersion) {
   console.log(`template-vue@${require('template-vue/package').version}`)
