@@ -17,7 +17,9 @@
   },
   "dependencies": {<% if (pwa) { %>
     "offline-plugin": "^4.8.0",<% } %>
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^7.0.0",
+    "object-assign": "^4.1.1",
+    "promise-polyfill": "^6.0.2"
   },
   "devDependencies": {
     "poi": "^8.0.0",

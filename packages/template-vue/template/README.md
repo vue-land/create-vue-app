@@ -19,6 +19,11 @@ yarn test<% } %>
 # serve the bundled dist folder in production mode
 yarn serve
 ```
+
+## Polyfills
+
+By default we only polyfill `window.Promise` and `Object.assign`. You can add more polyfills in `./src/polyfills.js`.
+
 <% if (karma) { %>
 ## Test
 
