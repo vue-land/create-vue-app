@@ -20,7 +20,7 @@ module.exports = {
     require('poi-preset-bundle-report')()<% if (karma) { %>,
     require('poi-preset-karma')({
       files: 'src/**/*.test.js'
-    })<%_ } %><%_ if (pwa) { %><%_ if (karma){ %>,<% } %>
+    })<%_ } %><%_ if (pwa) { %>,
     require('poi-preset-offline')({
       pwa: './src/pwa.js', // Path to pwa runtime entry
       pluginOptions: {} // Additional options for offline-plugin
