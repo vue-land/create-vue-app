@@ -26,7 +26,7 @@ sao vue folder-name
 
 You may also like [create-vue-app](https://github.com/egoist/create-vue-app) which is a wrapper of SAO and this template, so you don't need to install these two packages manually.
 
-[Check out the usage of this template here.](/template/README.md).
+Open `README.md` in generated project for documentation of this template.
 
 ## License
 
