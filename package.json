@@ -21,8 +21,9 @@
   },
   "dependencies": {
     "cross-spawn": "^5.1.0",
-    "sao": "^0.19.4",
-    "template-vue": "^2.3.1"
+    "sao": "^0.19.8",
+    "template-vue": "^2.4.0",
+    "yargs": "^8.0.1"
   },
   "devDependencies": {
     "eslint-config-rem": "^3.0.0",

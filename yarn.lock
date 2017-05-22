@@ -228,7 +228,7 @@ camelcase@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
 
-camelcase@^4.0.0:
+camelcase@^4.0.0, camelcase@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npmjs.org/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
@@ -296,6 +296,14 @@ cliui@^2.1.0:
     right-align "^0.1.1"
     wordwrap "0.0.2"
 
+cliui@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/cliui/-/cliui-3.2.0.tgz#120601537a916d29940f934da3b48d585a39213d"
+  dependencies:
+    string-width "^1.0.1"
+    strip-ansi "^3.0.1"
+    wrap-ansi "^2.0.0"
+
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
@@ -332,7 +340,7 @@ concat-stream@^1.5.2:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-conf@^1.0.0:
+conf@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/conf/-/conf-1.1.1.tgz#238d0a3090ac4916ed2d40c7e81d7a11667bc7ba"
   dependencies:
@@ -427,7 +435,7 @@ debug@^2.1.1, debug@^2.2.0:
   dependencies:
     ms "0.7.3"
 
-decamelize@^1.0.0, decamelize@^1.1.2:
+decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.npmjs.org/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
@@ -532,9 +540,9 @@ dot-prop@^4.1.0:
   dependencies:
     is-obj "^1.0.0"
 
-download-git-repo@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/download-git-repo/-/download-git-repo-1.0.0.tgz#27037bdb080766061e1ae33e9974dc3412526d5a"
+download-git-repo@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/download-git-repo/-/download-git-repo-1.0.1.tgz#d62b07abe829431e9fec90d5543597664228f305"
   dependencies:
     download "^5.0.3"
     git-clone "^0.1.0"
@@ -991,6 +999,10 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
+get-caller-file@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/get-caller-file/-/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
+
 get-proxy@^1.0.1:
   version "1.1.0"
   resolved "https://registry.npmjs.org/get-proxy/-/get-proxy-1.1.0.tgz#894854491bc591b0f147d7ae570f5c678b7256eb"
@@ -1208,6 +1220,10 @@ inquirer@^3.0.6:
 interpret@^1.0.0:
   version "1.0.3"
   resolved "https://registry.npmjs.org/interpret/-/interpret-1.0.3.tgz#cbc35c62eeee73f19ab7b10a801511401afc0f90"
+
+invert-kv@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
 irregular-plurals@^1.0.0:
   version "1.2.0"
@@ -1439,9 +1455,9 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.1.5"
 
-kopy@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/kopy/-/kopy-7.0.0.tgz#ad128788ed88e1787cb97f1e984a63a178ea844d"
+kopy@^7.0.1:
+  version "7.0.3"
+  resolved "https://registry.npmjs.org/kopy/-/kopy-7.0.3.tgz#da8c1796dcb28e65766a0f7fc585dc9b5f35d304"
   dependencies:
     inquirer "^3.0.6"
     is-binary-path "^2.0.0"
@@ -1465,6 +1481,12 @@ lazy-cache@^1.0.3:
 lazy-req@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/lazy-req/-/lazy-req-2.0.0.tgz#c9450a363ecdda2e6f0c70132ad4f37f8f06f2b4"
+
+lcid@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
+  dependencies:
+    invert-kv "^1.0.0"
 
 leven@^2.0.0:
   version "2.1.0"
@@ -1576,6 +1598,12 @@ make-dir@^1.0.0:
 map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
+
+mem@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/mem/-/mem-1.1.0.tgz#5edd52b485ca1d900fe64895505399a0dfa45f76"
+  dependencies:
+    mimic-fn "^1.0.0"
 
 meow@^3.4.0, meow@^3.4.2:
   version "3.7.0"
@@ -1739,6 +1767,14 @@ ora@^1.2.0:
 os-homedir@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/os-homedir/-/os-homedir-1.0.2.tgz#ffbc4988336e0e833de0c168c7ef152121aa7fb3"
+
+os-locale@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/os-locale/-/os-locale-2.0.0.tgz#15918ded510522b81ee7ae5a309d54f639fc39a4"
+  dependencies:
+    execa "^0.5.0"
+    lcid "^1.0.0"
+    mem "^1.1.0"
 
 os-tmpdir@~1.0.1:
   version "1.0.2"
@@ -2037,9 +2073,17 @@ req-all@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/req-all/-/req-all-1.0.0.tgz#d128569451c340b432409c656cf166260cd2628d"
 
+require-directory@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
+
 require-from-string@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npmjs.org/require-from-string/-/require-from-string-1.2.1.tgz#529c9ccef27380adfec9a2f965b649bbee636418"
+
+require-main-filename@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
 
 require-uncached@^1.0.2:
   version "1.0.3"
@@ -2122,19 +2166,19 @@ safe-buffer@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
 
-sao@^0.19.4:
-  version "0.19.4"
-  resolved "https://registry.npmjs.org/sao/-/sao-0.19.4.tgz#ee0f15764aab06c9aa4924a7031385a888a68c93"
+sao@^0.19.8:
+  version "0.19.8"
+  resolved "https://registry.npmjs.org/sao/-/sao-0.19.8.tgz#edbfc8f0379ed86c83fdb56817da36db357f287a"
   dependencies:
     cac "^3.0.4"
     chalk "^1.1.3"
     co "^4.6.0"
-    conf "^1.0.0"
-    download-git-repo "^1.0.0"
+    conf "^1.1.1"
+    download-git-repo "^1.0.1"
     git-config-path "^1.0.1"
     inquirer "^3.0.6"
     jstransformer-handlebars "^1.0.0"
-    kopy "^7.0.0"
+    kopy "^7.0.1"
     mkdirp "^0.5.1"
     node-fetch "^1.6.3"
     ora "^1.2.0"
@@ -2163,6 +2207,10 @@ semver-diff@^2.0.0:
 "semver@2 || 3 || 4 || 5", semver@^5.0.3, semver@^5.1.0:
   version "5.3.0"
   resolved "https://registry.npmjs.org/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
+
+set-blocking@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
 
 shebang-command@^1.2.0:
   version "1.2.0"
@@ -2253,7 +2301,7 @@ string_decoder@~1.0.0:
   dependencies:
     buffer-shims "~1.0.0"
 
-strip-ansi@^3.0.0:
+strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz#6a385fb8853d952d5ff05d0e8aaf94278dc63dcf"
   dependencies:
@@ -2330,9 +2378,9 @@ tar-stream@^1.5.2:
     readable-stream "^2.0.0"
     xtend "^4.0.0"
 
-template-vue@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.npmjs.org/template-vue/-/template-vue-2.3.1.tgz#ac4312df9337365f09d011419b81af6e1c463147"
+template-vue@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npmjs.org/template-vue/-/template-vue-2.4.0.tgz#9d19e88ecf8f36c28bde3f1c5573742baa584684"
   dependencies:
     superb "^1.3.0"
 
@@ -2486,6 +2534,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
 
+which-module@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/which-module/-/which-module-2.0.0.tgz#d9ef07dce77b9902b8a3a8fa4b31c3e3f7e6e87a"
+
 which@^1.2.8, which@^1.2.9:
   version "1.2.14"
   resolved "https://registry.npmjs.org/which/-/which-1.2.14.tgz#9a87c4378f03e827cecaf1acdf56c736c01c14e5"
@@ -2513,6 +2565,13 @@ wordwrap@~0.0.2:
 wordwrap@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
+
+wrap-ansi@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-2.1.0.tgz#d8fc3d284dd05794fe84973caecdd1cf824fdd85"
+  dependencies:
+    string-width "^1.0.1"
+    strip-ansi "^3.0.1"
 
 wrappy@1:
   version "1.0.2"
@@ -2599,9 +2658,37 @@ xtend@^4.0.0:
   version "4.0.1"
   resolved "https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
 
+y18n@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.npmjs.org/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
+
 yallist@^2.0.0:
   version "2.1.2"
   resolved "https://registry.npmjs.org/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
+
+yargs-parser@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/yargs-parser/-/yargs-parser-7.0.0.tgz#8d0ac42f16ea55debd332caf4c4038b3e3f5dfd9"
+  dependencies:
+    camelcase "^4.1.0"
+
+yargs@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.npmjs.org/yargs/-/yargs-8.0.1.tgz#420ef75e840c1457a80adcca9bc6fa3849de51aa"
+  dependencies:
+    camelcase "^4.1.0"
+    cliui "^3.2.0"
+    decamelize "^1.1.1"
+    get-caller-file "^1.0.1"
+    os-locale "^2.0.0"
+    read-pkg-up "^2.0.0"
+    require-directory "^2.1.1"
+    require-main-filename "^1.0.1"
+    set-blocking "^2.0.0"
+    string-width "^2.0.0"
+    which-module "^2.0.0"
+    y18n "^3.2.1"
+    yargs-parser "^7.0.0"
 
 yargs@~3.10.0:
   version "3.10.0"
