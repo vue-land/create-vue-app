@@ -16,6 +16,7 @@ test('defaults', async t => {
     'poi.config.js',
     'src/components/App.vue',
     'src/index.js',
+    'src/polyfills.js',
     'src/pwa.js',
     'static/favicon.ico',
     'static/icons/android-chrome-192x192.png',
