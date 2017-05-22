@@ -24,6 +24,15 @@ yarn serve
 
 By default we only polyfill `window.Promise` and `Object.assign`. You can add more polyfills in `./src/polyfills.js`.
 
+## Analyze bundle size
+
+Run `yarn report` to get a report of bundle size which helps you:
+
+- Realize what's really inside your bundle
+- Find out what modules make up the most of it's size
+- Find modules that got there by mistake
+- Optimize it!
+
 <% if (karma) { %>
 ## Test
 

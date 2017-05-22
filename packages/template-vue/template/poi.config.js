@@ -15,8 +15,9 @@ module.exports = {
     plugins: [
       // Your postcss plugins
     ]
-  }<% if (karma || pwa) { %>,
-  presets: [<% if (karma) { %>
+  },
+  presets: [
+    require('poi-preset-bundle-report')()<% if (karma) { %>,
     require('poi-preset-karma')({
       files: 'src/**/*.test.js'
     })<%_ } %><%_ if (pwa) { %><%_ if (karma){ %>,<% } %>
@@ -24,5 +25,5 @@ module.exports = {
       pwa: './src/pwa.js', // Path to pwa runtime entry
       pluginOptions: {} // Additional options for offline-plugin
     })<% } %>
-  ]<% } %>
+  ]
 }
