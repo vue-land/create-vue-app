@@ -1,3 +1,11 @@
+## [Version 2.4.1](https://github.com/egoist/template-vue/releases/tag/v2.4.1) (2017-5-23)
+
+### Bug fixes
+
+- fix poi config: [`150688f`](https://github.com/egoist/template-vue/commit/150688f)
+
+[...full changes](https://github.com/egoist/template-vue/compare/v2.4.0...v2.4.1)
+
 ## [Version 2.4.0](https://github.com/egoist/template-vue/releases/tag/v2.4.0) (2017-5-22)
 
 ### New features
