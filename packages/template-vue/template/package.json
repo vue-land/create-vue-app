@@ -15,8 +15,9 @@
     "name": "<%= username %>",
     "email": "<%= email %>"
   },
-  "dependencies": {
-    <% if (pwa) { %>"offline-plugin": "^4.8.0"<% } %>
+  "dependencies": {<% if (pwa) { %>
+    "offline-plugin": "^4.8.0",<% } %>
+    "normalize.css": "^7.0.0"
   },
   "devDependencies": {
     "poi": "^8.0.0",
