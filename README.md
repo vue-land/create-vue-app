@@ -34,6 +34,16 @@ Alternatively, if you have Yarn^0.24, you can use the `yarn create` command:
 yarn create vue-app my-vue-app
 ```
 
+## Recipes
+
+- [Unit Test](./docs/unit-test.md)
+
+## FAQ
+
+### Where are the docs?
+
+**This project is using Poi under the hood**, so for most questions, hopefully go to [this page](https://poi.js.org/#/home) and you will get the answer.
+
 ## Contributing
 
 1. Fork it!
