@@ -49,7 +49,7 @@ test('use ava', async t => {
   ])
 })
 
-test('use ava', async t => {
+test('use karma', async t => {
   const res = await sao.mockPrompt(template, {
     test: 'karma'
   })

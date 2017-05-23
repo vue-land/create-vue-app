@@ -2,11 +2,13 @@
 
 [![NPM version](https://img.shields.io/npm/v/create-vue-app.svg?style=flat)](https://npmjs.com/package/create-vue-app) [![NPM downloads](https://img.shields.io/npm/dm/create-vue-app.svg?style=flat)](https://npmjs.com/package/create-vue-app) [![CircleCI](https://circleci.com/gh/egoist/create-vue-app/tree/master.svg?style=shield)](https://circleci.com/gh/egoist/create-vue-app/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
 
-## How does this work?
+## Features
 
-This is a [CLI](https://en.wikipedia.org/wiki/CLI) that wraps [SAO](https://github.com/egoist/sao) and [template-vue](https://github.com/egoist/template-vue), so running `create-vue-app my-app` is equivalent to running `sao vue my-app`.
-
-Basically this is similar to `create-react-app` and `template-vue` uses [Poi](https://poi.js.org) under the hood.
+- No config until you need, thanks to [Poi](https://github.com/egoist/poi).
+  - Support all CSS preprocessors and CSS modules
+  - Hot mode reloading
+- Unit tests with [AVA](https://github.com/avajs/ava) or Karma, thanks to [poi-preset-karma](https://github.com/egoist/poi/tree/master/packages/poi-preset-karma)
+- Progressive Web App by default, thanks to [poi-preset-offline](https://github.com/egoist/poi/tree/master/packages/poi-preset-offline) and [offline-plugin](https://github.com/NekR/offline-plugin).
 
 ## Install
 
@@ -31,10 +33,6 @@ Alternatively, if you have Yarn^0.24, you can use the `yarn create` command:
 ```bash
 yarn create vue-app my-vue-app
 ```
-
-For details about folder structure please head to [template-vue](https://github.com/egoist/template-vue).
-
-For more usages on Poi please head to its [documentation](https://poi.js.org/#/home).
 
 ## Contributing
 

@@ -20,5 +20,6 @@
   "devDependencies": {
     "ava": "^0.19.1",
     "sao": "^0.19.5"
-  }
+  },
+  "xo": false
 }

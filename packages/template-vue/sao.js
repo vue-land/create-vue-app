@@ -15,9 +15,9 @@ module.exports = {
       default: 'disable',
       message: 'Choose a test runner for unit tests',
       choices: [
-        {name: 'Disable', value: 'disable'},
-        {name: 'AVA', value: 'ava'},
-        {name: 'Karma', value: 'karma'}
+        { name: 'Disable', value: 'disable' },
+        { name: 'AVA', value: 'ava' },
+        { name: 'Karma', value: 'karma' }
       ]
     },
     pwa: {
@@ -41,11 +41,11 @@ module.exports = {
     }
   },
   move: {
-    'gitignore': '.gitignore'
+    gitignore: '.gitignore'
   },
   filters: {
     'src/components/App.test.js': 'test === "karma"',
-    'src/pwa.js': "pwa",
+    'src/pwa.js': 'pwa',
     'static/manifest.json': 'manifest',
     'static/icons/**': 'manifest',
     'test/**': 'test === "ava"'
@@ -60,7 +60,9 @@ module.exports = {
     console.log(_.chalk.cyan('\n  To build for production:'))
     console.log('\n    yarn build')
 
-    console.log(_.chalk.dim('\n  For more usages, please check out ./README.md'))
+    console.log(
+      _.chalk.dim('\n  For more usages, please check out ./README.md')
+    )
     console.log()
   }
 }

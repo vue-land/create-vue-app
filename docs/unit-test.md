@@ -2,7 +2,7 @@
 
 To test your Vue component, you can enable either `AVA` or `Karma` during the process of generating a new project.
 
-![preview](https://ooo.0o0.ooo/2017/05/23/592448b0b54f0.png)
+![preview](https://ooo.0o0.ooo/2017/05/23/5924596cbe646.png)
 
 ## AVA
 
