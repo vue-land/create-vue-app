@@ -1,6 +1,6 @@
 # Unit Test
 
-To test your Vue component, you can enable either `AVA` or `Karma` during generating a new project.
+To test your Vue component, you can enable either `AVA` or `Karma` during the process of generating a new project.
 
 ![preview](https://ooo.0o0.ooo/2017/05/23/592448b0b54f0.png)
 
