@@ -1,0 +1,22 @@
+{
+  "name": "create-vue-app",
+  "version": "1.1.0",
+  "description": "Create Vue apps with no build configuration.",
+  "repository": {
+    "url": "egoist/create-vue-app",
+    "type": "git"
+  },
+  "bin": "cli.js",
+  "files": [
+    "cli.js"
+  ],
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cross-spawn": "^5.1.0",
+    "sao": "^0.19.8",
+    "template-vue": "^2.4.0",
+    "yargs": "^8.0.1"
+  },
+  "xo": false
+}

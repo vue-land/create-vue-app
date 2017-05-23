@@ -1,39 +1,21 @@
 {
+  "private": true,
   "name": "create-vue-app",
-  "version": "1.1.0",
-  "description": "Create Vue apps with no build configuration.",
-  "repository": {
-    "url": "egoist/create-vue-app",
-    "type": "git"
-  },
-  "bin": "cli.js",
-  "files": [
-    "cli.js"
-  ],
+  "version": "0.0.0",
+  "description": "create-vue-app mono-repo",
+  "main": "index.js",
   "scripts": {
-    "test": "npm run lint",
-    "lint": "xo"
+    "test": "lerna boostrap && xo"
   },
-  "author": "egoist <0x142857@gmail.com>",
+  "repository": "git@github.com:egoist/create-vue-app.git",
+  "author": "EGOIST <0x142857@gmail.com>",
   "license": "MIT",
-  "jest": {
-    "testEnvironment": "node"
-  },
-  "dependencies": {
-    "cross-spawn": "^5.1.0",
-    "sao": "^0.19.8",
-    "template-vue": "^2.4.0",
-    "yargs": "^8.0.1"
-  },
   "devDependencies": {
-    "eslint-config-rem": "^3.0.0",
-    "xo": "^0.18.0"
+    "eslint-config-rem": "^3.1.0",
+    "lerna": "2.0.0-beta.38",
+    "xo": "^0.18.2"
   },
   "xo": {
-    "extends": "rem/prettier",
-    "esnext": true,
-    "envs": [
-      "jest"
-    ]
+    "extends": "rem/prettier"
   }
 }
