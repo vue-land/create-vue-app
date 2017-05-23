@@ -9,13 +9,23 @@
     "dev": "poi",
     "build": "poi build",
     "report": "poi build --bundle-report",
-    "serve": "serve dist --single"<% if (karma) { %>,
-    "test": "poi test"<% } %>
+    "serve": "serve dist --single"<% if (test === 'karma') { %>,
+    "test": "poi test"<% } else if (test === 'ava') { %>,
+    "test": "cross-env NODE_ENV=test ava"<% } %>
+  },
+  "babel": {
+    "presets": ["vue-app"]
   },
   "author": {
     "name": "<%= username %>",
     "email": "<%= email %>"
-  },
+  }<% if (test === 'ava') { %>,
+	"ava": {
+    "babel": "inherit",
+    "require": [
+      "./test/helpers/setup.js"
+    ]
+  }<% } %>,
   "dependencies": {<% if (pwa) { %>
     "offline-plugin": "^4.8.0",<% } %>
     "normalize.css": "^7.0.0",
@@ -25,8 +35,14 @@
   "devDependencies": {
     "poi": "^8.0.0",
     "poi-preset-bundle-report": "^1.0.1",
-    "serve": "^3.1.0"<% if (karma) { %>,
-    "poi-preset-karma": "^8.0.0"<% } %><% if (pwa) { %>,
+    "serve": "^3.1.0"<% if (test === 'karma') { %>,
+    "poi-preset-karma": "^8.0.0"<% } else if (test === 'ava') { %>,
+    "ava": "^0.19.1",
+    "cross-env": "^5.0.0",
+    "browser-env": "^2.0.31",
+    "require-extension-hooks": "^0.2.0",
+    "require-extension-hooks-vue": "^0.3.1",
+    "require-extension-hooks-babel": "^0.1.1"<% } %><% if (pwa) { %>,
     "poi-preset-offline": "^8.0.0"<% } %>
   }
 }

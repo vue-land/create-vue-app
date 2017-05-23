@@ -11,9 +11,9 @@ You can replace `yarn` with `npm run` here.
 yarn build
 
 # development mode
-yarn dev<% if (karma) { %>
+yarn dev<% if (test !== 'disable') { %>
 
-# run unit tests with karma
+# run unit tests
 yarn test<% } %>
 
 # serve the bundled dist folder in production mode
@@ -37,15 +37,22 @@ Run `yarn report` to get a report of bundle size which helps you:
 - Find modules that got there by mistake
 - Optimize it!
 
-<% if (karma) { %>
+<% if (test === 'karma') { -%>
 ## Test
 
 By default Karma uses mocha and chrome to run your tests, you can choose your own assetion library like [chai](http://chaijs.com).
 
 To run it in watch mode, you can type: `yarn test -- --watch`.
 
-For all the available options, please head to [poi-preset-karma](https://github.com/egoist/poi/tree/master/packages/poi-preset-karma#options).<% } %>
-<% if (pwa){ %>
+For all the available options, please head to [poi-preset-karma](https://github.com/egoist/poi/tree/master/packages/poi-preset-karma#options).<% } else if (test === 'ava') { %>
+## Test
+
+You can use [AVA](https://github.com/avajs/ava) to run tests, basically the default setup is based on AVA's offical [Vue.js recipe](https://github.com/avajs/ava/blob/master/docs/recipes/vue.md).
+
+Check out `./test/test.js` for an example test case, and `./test/helpers/setup.js` for how we transform `.vue` and `.js` files.
+<% } -%>
+
+<% if (pwa){ -%>
 ## Progress Web App
 
 Your app is now offline-ready (only in production bundle), which means you can visit it without network.<% if (manifest) { %>

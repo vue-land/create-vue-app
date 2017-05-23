@@ -17,7 +17,7 @@ module.exports = {
     ]
   },
   presets: [
-    require('poi-preset-bundle-report')()<% if (karma) { %>,
+    require('poi-preset-bundle-report')()<% if (test === 'karma') { %>,
     require('poi-preset-karma')({
       files: 'src/**/*.test.js'
     })<%_ } %><%_ if (pwa) { %>,

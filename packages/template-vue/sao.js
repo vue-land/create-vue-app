@@ -10,10 +10,15 @@ module.exports = {
       message: 'How would your descripe your superb project',
       default: `My ${superb()} Vue project`
     },
-    karma: {
-      type: 'confirm',
-      default: false,
-      message: 'Setup unit tests with Karma'
+    test: {
+      type: 'list',
+      default: 'disable',
+      message: 'Choose a test runner for unit tests',
+      choices: [
+        {name: 'Disable', value: 'disable'},
+        {name: 'AVA', value: 'ava'},
+        {name: 'Karma', value: 'karma'}
+      ]
     },
     pwa: {
       type: 'confirm',
@@ -39,10 +44,11 @@ module.exports = {
     'gitignore': '.gitignore'
   },
   filters: {
-    '**/*.test.js': 'karma',
+    'src/components/App.test.js': 'test === "karma"',
     'src/pwa.js': "pwa",
     'static/manifest.json': 'manifest',
-    'static/icons/**': 'manifest'
+    'static/icons/**': 'manifest',
+    'test/**': 'test === "ava"'
   },
   gitInit: true,
   installDependencies: true,
