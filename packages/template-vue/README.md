@@ -12,7 +12,7 @@ Scaffold out a Vue.js project which uses Poi.
 
 ## Install
 
-Using [SAO](https://github.com/egoist/sao).
+### Using [SAO](https://github.com/egoist/sao)
 
 ```bash
 # Install sao first
@@ -24,9 +24,15 @@ sao egoist/template-vue folder-name
 sao vue folder-name
 ```
 
-You may also like [create-vue-app](https://github.com/egoist/create-vue-app) which is a wrapper of SAO and this template, so you don't need to install these two packages manually.
+### Using [create-vue-app](https://github.com/egoist/create-vue-app)
 
-Open `README.md` in generated project for documentation of this template.
+ create-vue-app is a wrapper of SAO and this template.
+
+```bash
+yarn global add create-vue-app
+
+create-vue-app folder-name
+```
 
 ## License
 
