@@ -1,3 +1,15 @@
+## [Version 2.5.0](https://github.com/egoist/template-vue/releases/tag/v2.5.0) (2017-5-23)
+
+### New features
+
+- add ava: [`e946556`](https://github.com/egoist/template-vue/commit/e946556)
+
+### Bug fixes
+
+- tweaks: [`20045d9`](https://github.com/egoist/template-vue/commit/20045d9)
+
+[...full changes](https://github.com/egoist/template-vue/compare/v2.4.1...v2.5.0)
+
 ## [Version 2.4.1](https://github.com/egoist/template-vue/releases/tag/v2.4.1) (2017-5-23)
 
 ### Bug fixes
