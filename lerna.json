@@ -7,7 +7,7 @@
   "commands": {
     "publish": {
       "ignore": [
-        "*.md",
+        "./README.md",
         "example/**",
         "test/**"
       ]
