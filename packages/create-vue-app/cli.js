@@ -2,7 +2,10 @@
 const path = require('path')
 const spawn = require('cross-spawn')
 const yargs = require('yargs')
+const update = require('update-notifier')
 const pkg = require('./package')
+
+update({ pkg }).notify()
 
 const cli = yargs
   .option('sao-version', {
