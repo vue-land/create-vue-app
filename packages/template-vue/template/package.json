@@ -14,7 +14,9 @@
     "test": "cross-env NODE_ENV=test ava"<% } %>
   },
   "babel": {
-    "presets": ["vue-app"]
+    "presets": [
+      ["vue-app", {"useBuiltIns": true}]
+    ]
   },
   "author": {
     "name": "<%= username %>",
