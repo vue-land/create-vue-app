@@ -8,7 +8,7 @@ module.exports = {
   ],
   html: {
     title: pkg.productName,
-    description: pkg.descrption,
+    description: pkg.description,
     template: path.join(__dirname, 'index.ejs')
   },
   postcss: {
