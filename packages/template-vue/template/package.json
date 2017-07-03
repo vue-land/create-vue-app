@@ -33,16 +33,16 @@
     "promise-polyfill": "^6.0.2"
   },
   "devDependencies": {
-    "poi": "^8.0.0",
-    "poi-preset-bundle-report": "^1.0.1",
+    "poi": "^9.0.0",
+    "poi-preset-bundle-report": "^2.0.0",
     "serve": "^3.1.0"<% if (test === 'karma') { %>,
-    "poi-preset-karma": "^8.0.0"<% } else if (test === 'ava') { %>,
+    "poi-preset-karma": "^9.0.0"<% } else if (test === 'ava') { %>,
     "ava": "^0.19.1",
     "cross-env": "^5.0.0",
     "browser-env": "^2.0.31",
     "require-extension-hooks": "^0.2.0",
     "require-extension-hooks-vue": "^0.3.1",
     "require-extension-hooks-babel": "^0.1.1"<% } %><% if (pwa) { %>,
-    "poi-preset-offline": "^8.0.0"<% } %>
+    "poi-preset-offline": "^9.0.0"<% } %>
   }
 }
