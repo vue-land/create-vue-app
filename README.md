@@ -1,6 +1,6 @@
 # create-vue-app
 
-[![NPM version](https://img.shields.io/npm/v/create-vue-app.svg?style=flat)](https://npmjs.com/package/create-vue-app) [![NPM downloads](https://img.shields.io/npm/dm/create-vue-app.svg?style=flat)](https://npmjs.com/package/create-vue-app) [![CircleCI](https://circleci.com/gh/egoist/create-vue-app/tree/master.svg?style=shield)](https://circleci.com/gh/egoist/create-vue-app/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
+[![NPM version](https://img.shields.io/npm/v/create-vue-app.svg?style=flat)](https://npmjs.com/package/create-vue-app) [![NPM downloads](https://img.shields.io/npm/dm/create-vue-app.svg?style=flat)](https://npmjs.com/package/create-vue-app) [![CircleCI](https://circleci.com/gh/egoist/create-vue-app/tree/master.svg?style=shield)](https://circleci.com/gh/egoist/create-vue-app/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate) [![chat](https://img.shields.io/badge/chat-on%20discord-7289DA.svg?style=flat)](https://chat.egoist.moe)
 
 ## Features
 
