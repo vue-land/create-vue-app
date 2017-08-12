@@ -1,43 +1,27 @@
 #!/usr/bin/env node
 const path = require('path')
-const spawn = require('cross-spawn')
-const yargs = require('yargs')
+const cac = require('cac')
+const sao = require('sao')
 const update = require('update-notifier')
 const pkg = require('./package')
 
-update({ pkg }).notify()
+const cli = cac()
 
-const cli = yargs
-  .option('sao-version', {
-    desc: 'Display the version of package "sao"'
+cli.command('*', 'Generate a new project', input => {
+  const folderName = input[0] || '.'
+  const targetPath = path.resolve(folderName)
+  console.log(`> Generating project in ${targetPath}`)
+
+  const templatePath = path.dirname(require.resolve('template-vue/package'))
+
+  return sao({
+    template: templatePath,
+    targetPath
   })
-  .option('template-version', {
-    desc: 'Display the version of package "template-vue"'
-  })
-  .example('$0 my-project', 'Generate a new project in "my-project" folder')
-  .epilogue(
-    'If you have any problems, do not hesitate to file an issue:\n https://github.com/egoist/create-vue-app/issues/new'
-  )
-  .alias('v', 'version')
-  .alias('h', 'help')
-  .version(pkg.version)
-  .help().argv
+})
 
-if (cli.templateVersion) {
-  console.log(`template-vue@${require('template-vue/package').version}`)
-  process.exit()
-}
+cli.parse()
 
-if (cli.saoVersion) {
-  console.log(`sao@${require('sao/package').version}`)
-  process.exit()
-}
-
-const sao = require.resolve('sao/bin/sao')
-
-const argv = process.argv.slice(2)
-const templatePath = path.dirname(require.resolve('template-vue/package'))
-argv.unshift(templatePath)
-
-// Run `sao $template $argv`
-spawn.sync(sao, argv, { stdio: 'inherit' })
+update({
+  pkg
+}).notify()

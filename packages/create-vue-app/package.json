@@ -13,11 +13,10 @@
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "cross-spawn": "^5.1.0",
-    "sao": "^0.19.8",
+    "cac": "^4.2.0",
+    "sao": "^0.21.3",
     "template-vue": "^2.5.5",
-    "update-notifier": "^2.1.0",
-    "yargs": "^8.0.1"
+    "update-notifier": "^2.1.0"
   },
   "xo": false
 }
