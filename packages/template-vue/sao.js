@@ -23,7 +23,7 @@ module.exports = {
     pwa: {
       type: 'confirm',
       default: true,
-      message: 'Add Progress Web App support'
+      message: 'Add Progressive Web App (PWA) support'
     },
     manifest: {
       type: 'confirm',
