@@ -18,26 +18,31 @@ module.exports = {
         { name: 'Disable', value: 'disable' },
         { name: 'AVA', value: 'ava' },
         { name: 'Karma', value: 'karma' }
-      ]
+      ],
+      store: true
     },
     pwa: {
       type: 'confirm',
       default: true,
-      message: 'Add Progressive Web App (PWA) support'
+      message: 'Add Progressive Web App (PWA) support',
+      store: true
     },
     manifest: {
       type: 'confirm',
       default: true,
       when: 'pwa',
-      message: 'Use default manifest.json and icons for PWA'
+      message: 'Use default manifest.json and icons for PWA',
+      store: true
     },
     username: {
       message: `What's your GitHub username`,
-      default: ':gitUser:'
+      default: ':gitUser:',
+      store: true
     },
     email: {
       message: `What's your GitHub email`,
-      default: ':gitEmail:'
+      default: ':gitEmail:',
+      store: true
     }
   },
   move: {
