@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "cac": "^4.2.0",
-    "sao": "^0.21.3",
+    "sao": "^0.22.2",
     "template-vue": "^2.5.7",
     "update-notifier": "^2.1.0"
   },
