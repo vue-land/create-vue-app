@@ -15,7 +15,7 @@
   },
   "babel": {
     "presets": [
-      ["poi", {"useBuiltIns": true}]
+      "poi",
     ]
   },
   "author": {
