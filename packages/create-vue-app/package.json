@@ -1,6 +1,6 @@
 {
   "name": "create-vue-app",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "Create Vue apps with no build configuration.",
   "repository": {
     "url": "egoist/create-vue-app",
@@ -15,7 +15,7 @@
   "dependencies": {
     "cac": "^4.2.0",
     "sao": "^0.22.2",
-    "template-vue": "^2.5.8",
+    "template-vue": "^2.5.9",
     "update-notifier": "^2.1.0"
   },
   "xo": false
