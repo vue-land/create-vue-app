@@ -23,6 +23,12 @@ module.exports = {
       message: 'Use default manifest.json and icons for PWA',
       store: true
     },
+    unitTest: {
+      type: 'confirm',
+      default: true,
+      message: 'Use Tyu(Jest) to run unit tests',
+      store: true
+    },
     username: {
       message: `What's your GitHub username`,
       default: ':gitUser:',
@@ -40,7 +46,8 @@ module.exports = {
   filters: {
     'src/pwa.js': 'pwa',
     'static/manifest.json': 'manifest',
-    'static/icons/**': 'manifest'
+    'static/icons/**': 'manifest',
+    'src/components/App.test.js': 'unitTest'
   },
   gitInit: true,
   installDependencies: true,

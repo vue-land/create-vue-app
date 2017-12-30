@@ -9,8 +9,8 @@
     "dev": "poi",
     "build": "poi build",
     "report": "poi build --bundle-report",
-    "serve": "serve dist --single",
-    "test": "tyu"
+    "serve": "serve dist --single"<% if (unitTest) { %>,
+    "test": "tyu"<% } %>
   },
   "author": {
     "name": "<%= username %>",
@@ -25,8 +25,8 @@
   "devDependencies": {
     "poi": "^9.0.0",
     "poi-preset-bundle-report": "^2.0.0",
-    "serve": "^6.1.0",
-    "tyu": "^1.0.4"<% if (pwa) { %>,
+    "serve": "^6.1.0"<% if (unitTest) { %>,
+    "tyu": "^1.0.4"<% } %><% if (pwa) { %>,
     "poi-preset-offline": "^9.0.0"<% } %>
   }
 }

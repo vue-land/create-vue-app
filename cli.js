@@ -8,7 +8,11 @@ const pkg = require('./package')
 const cli = cac()
 
 cli.command('*', 'Generate a new project', input => {
-  const folderName = input[0] || '.'
+  if (input.length === 0) {
+    return cli.showHelp()
+  }
+
+  const folderName = input[0]
   const targetPath = path.resolve(folderName)
   console.log(`> Generating project in ${targetPath}`)
 
