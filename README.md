@@ -21,7 +21,7 @@ yarn global add create-vue-app
 ```bash
 # Generate project in cwd
 mkdir my-vue-app && cd my-vue-app
-create-vue-app
+create-vue-app .
 
 # Generate project in specific folder
 create-vue-app my-vue-app
