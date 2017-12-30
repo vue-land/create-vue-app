@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Create Vue app with no build configurations",
   "scripts": {
-    "test": "npm run lint && ava",
+    "test": "npm run lint && npm run ava",
     "ava": "ava test/test.js",
     "lint": "xo"
   },
