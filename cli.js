@@ -12,10 +12,8 @@ cli.command('*', 'Generate a new project', input => {
   const targetPath = path.resolve(folderName)
   console.log(`> Generating project in ${targetPath}`)
 
-  const templatePath = path.dirname(require.resolve('template-vue/package'))
-
   return sao({
-    template: templatePath,
+    template: __dirname,
     targetPath
   })
 })

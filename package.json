@@ -7,7 +7,10 @@
     "ava": "ava test/test.js",
     "lint": "xo"
   },
-  "bin": "cli.js",
+  "bin": {
+    "cva": "cli.js",
+    "create-vue-app": "cli.js"
+  },
   "files": [
     "sao.js",
     "cli.js",
