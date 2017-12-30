@@ -34,6 +34,25 @@ Alternatively, if you have Yarn^0.24, you can use the `yarn create` command:
 yarn create vue-app my-vue-app
 ```
 
+### Folder structure
+
+```bash
+.
+├── README.md
+├── index.ejs
+├── package.json
+├── poi.config.js
+├── src
+│   ├── components
+│   │   ├── App.test.js
+│   │   └── App.vue
+│   ├── index.js
+│   └── polyfills.js
+├── static
+│   └── favicon.ico
+└── yarn.lock
+```
+
 ## Recipes
 
 - [Unit Test](./docs/unit-test.md)
