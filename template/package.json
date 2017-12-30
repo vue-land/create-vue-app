@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "<%= name %>",
+  "productName": "<%= name %>",
+  "description": "<%= description %>",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "poi",
+    "build": "poi build",
+    "report": "poi build --bundle-report",
+    "serve": "serve dist --single",
+    "test": "tyu"
+  },
+  "author": {
+    "name": "<%= username %>",
+    "email": "<%= email %>"
+  },
+  "dependencies": {<% if (pwa) { %>
+    "offline-plugin": "^4.8.0",<% } %>
+    "normalize.css": "^7.0.0",
+    "object-assign": "^4.1.1",
+    "promise-polyfill": "^6.0.2"
+  },
+  "devDependencies": {
+    "poi": "^9.0.0",
+    "poi-preset-bundle-report": "^2.0.0",
+    "serve": "^6.1.0",
+    "tyu": "^1.0.4"<% if (pwa) { %>,
+    "poi-preset-offline": "^9.0.0"<% } %>
+  }
+}

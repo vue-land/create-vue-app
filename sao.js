@@ -10,17 +10,6 @@ module.exports = {
       message: 'How would your descripe your superb project',
       default: `My ${superb()} Vue project`
     },
-    test: {
-      type: 'list',
-      default: 'disable',
-      message: 'Choose a test runner for unit tests',
-      choices: [
-        { name: 'Disable', value: 'disable' },
-        { name: 'AVA', value: 'ava' },
-        { name: 'Karma', value: 'karma' }
-      ],
-      store: true
-    },
     pwa: {
       type: 'confirm',
       default: true,
@@ -49,11 +38,9 @@ module.exports = {
     gitignore: '.gitignore'
   },
   filters: {
-    'src/components/App.test.js': 'test === "karma"',
     'src/pwa.js': 'pwa',
     'static/manifest.json': 'manifest',
-    'static/icons/**': 'manifest',
-    'test/**': 'test === "ava"'
+    'static/icons/**': 'manifest'
   },
   gitInit: true,
   installDependencies: true,
