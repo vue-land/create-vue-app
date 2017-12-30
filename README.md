@@ -7,7 +7,7 @@
 - No config until you need, thanks to [Poi](https://github.com/egoist/poi).
   - Support all CSS preprocessors and CSS modules
   - Hot mode reloading
-- Unit tests with [AVA](https://github.com/avajs/ava) or Karma, thanks to [poi-preset-karma](https://github.com/egoist/poi/tree/master/packages/poi-preset-karma)
+- Unit tests with [Jest](https://github.com/avajs/ava) with no config by default thanks to [Tyu](https://github.com/egoist/tyu).
 - Progressive Web App by default, thanks to [poi-preset-offline](https://github.com/egoist/poi/tree/master/packages/poi-preset-offline) and [offline-plugin](https://github.com/NekR/offline-plugin).
 
 ## Install
