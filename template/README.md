@@ -34,7 +34,7 @@ Run `yarn report` to get a report of bundle size which helps you:
 - Optimize it!
 
 <% if (pwa){ -%>
-## Progress Web App
+## Progressive Web App
 
 Your app is now offline-ready (only in production bundle), which means you can visit it without network.<% if (manifest) { %>
 
