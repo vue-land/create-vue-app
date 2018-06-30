@@ -7,7 +7,7 @@ module.exports = {
       default: ':folderName:'
     },
     description: {
-      message: 'How would your descripe your superb project',
+      message: 'How would your describe your superb project',
       default: `My ${superb()} Vue project`
     },
     pwa: {
